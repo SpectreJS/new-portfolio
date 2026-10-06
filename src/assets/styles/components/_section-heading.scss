@@ -1,0 +1,38 @@
+@use '../utilities' as *;
+
+.section-heading {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: baseline;
+  gap: 1rem;
+  padding-bottom: 1.1rem;
+  margin-bottom: clamp(3rem, 8vw, 7rem);
+  color: var(--fg);
+
+  &__index {
+    color: var(--accent);
+  }
+
+  .theme-light &__index {
+    color: var(--fg);
+  }
+
+  &__label {
+    font-size: 0.72rem;
+  }
+
+  &__aside {
+    color: var(--fg-dim);
+    text-align: right;
+  }
+
+  &__rule {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: var(--line);
+  }
+}

@@ -1,0 +1,28 @@
+:root {
+  --ink: #0c0c0b;
+  --ink-2: #151513;
+  --bone: #efebe4;
+  --accent: #ff4f1a;
+
+  --bg: var(--ink);
+  --fg: var(--bone);
+  --fg-dim: rgba(239, 235, 228, 0.62);
+  --line: rgba(239, 235, 228, 0.16);
+
+  --font-display: 'Inter Tight Variable', 'Inter Tight', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Instrument Serif', 'Times New Roman', Georgia, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --pad: clamp(1.25rem, 4vw, 3.5rem);
+  --header-h: 5.5rem;
+  --section-y: clamp(6rem, 14vw, 12rem);
+}
+
+.theme-light {
+  --bg: var(--bone);
+  --fg: var(--ink);
+  --fg-dim: rgba(12, 12, 11, 0.66);
+  --line: rgba(12, 12, 11, 0.16);
+  background: var(--bg);
+  color: var(--fg);
+}
