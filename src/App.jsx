@@ -13,11 +13,11 @@ function AppRoutes() {
   const location = useLocation()
   // Keyed by pathname so every page (even /work/a → /work/b) remounts with fresh animations.
   return (
-    <Routes location={location} key={location.pathname}>
-      <Route path="/" element={<Home />} />
-      <Route path="/work/:slug" element={<Project />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+	 <Routes location={location} key={location.pathname}>
+		<Route path="/" element={<Home />} />
+		<Route path="/work/:slug" element={<Project />} />
+		<Route path="*" element={<NotFound />} />
+	 </Routes>
   )
 }
 
@@ -26,13 +26,13 @@ export default function App() {
   const finePointer = useFinePointer()
 
   return (
-    <TransitionProvider>
-      <a className="skip-link" href="#main">Aller au contenu</a>
-      <Header />
-      <AppRoutes />
-      <Curtain />
-      {finePointer && <Cursor />}
-      <div className="grain" aria-hidden="true" />
-    </TransitionProvider>
+	 <TransitionProvider>
+		<a className="skip-link" href="#main">Aller au contenu</a>
+		<Header />
+		<AppRoutes />
+		<Curtain />
+		{finePointer && <Cursor />}
+		<div className="grain" aria-hidden="true" />
+	 </TransitionProvider>
   )
 }

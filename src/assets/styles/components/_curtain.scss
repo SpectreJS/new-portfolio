@@ -9,64 +9,64 @@
   color: var(--ink);
 
   &__panel {
-    flex: 1;
-    height: 100%;
-    background: var(--accent);
-    // Overlap by a pixel to avoid hairline seams between panels.
-    margin-right: -1px;
-    will-change: transform;
+	 flex: 1;
+	 height: 100%;
+	 background: var(--accent);
+	 // Overlap by a pixel to avoid hairline seams between panels.
+	 margin-right: -1px;
+	 will-change: transform;
   }
 
   &__boot,
   &__content {
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    padding: var(--pad);
+	 position: absolute;
+	 inset: 0;
+	 display: grid;
+	 place-items: center;
+	 padding: var(--pad);
   }
 
   &__boot-name {
-    font-size: clamp(2.6rem, 9vw, 9rem);
-    font-weight: 700;
-    letter-spacing: -0.05em;
-    line-height: 1;
-    overflow: hidden;
-    padding-bottom: 0.06em;
+	 font-size: clamp(2.6rem, 9vw, 9rem);
+	 font-weight: 700;
+	 letter-spacing: -0.05em;
+	 line-height: 1;
+	 overflow: hidden;
+	 padding-bottom: 0.06em;
 
-    .char {
-      display: inline-block;
-    }
+	 .char {
+		display: inline-block;
+	 }
   }
 
   &__counter {
-    position: absolute;
-    left: var(--pad);
-    bottom: var(--pad);
-    font-size: clamp(2.5rem, 7vw, 6rem) !important;
-    line-height: 1;
-    letter-spacing: -0.04em !important;
+	 position: absolute;
+	 left: var(--pad);
+	 bottom: var(--pad);
+	 font-size: clamp(2.5rem, 7vw, 6rem) !important;
+	 line-height: 1;
+	 letter-spacing: -0.04em !important;
   }
 
   &__boot-role {
-    position: absolute;
-    right: var(--pad);
-    bottom: var(--pad);
-    max-width: 18ch;
-    text-align: right;
+	 position: absolute;
+	 right: var(--pad);
+	 bottom: var(--pad);
+	 max-width: 18ch;
+	 text-align: right;
   }
 
   &__content {
-    align-content: center;
-    gap: 1rem;
-    overflow: hidden;
+	 align-content: center;
+	 gap: 1rem;
+	 overflow: hidden;
   }
 
   &__label {
-    font-size: clamp(3rem, 12vw, 12rem);
-    font-weight: 650;
-    letter-spacing: -0.055em;
-    line-height: 0.9;
-    padding-bottom: 0.08em;
+	 font-size: clamp(3rem, 12vw, 12rem);
+	 font-weight: 650;
+	 letter-spacing: -0.055em;
+	 line-height: 0.9;
+	 padding-bottom: 0.08em;
   }
 }

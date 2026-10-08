@@ -7,38 +7,38 @@
   background: var(--bg);
 
   &__track {
-    display: flex;
-    width: max-content;
-    will-change: transform;
+	 display: flex;
+	 width: max-content;
+	 will-change: transform;
   }
 
   &__group {
-    display: flex;
-    flex-shrink: 0;
+	 display: flex;
+	 flex-shrink: 0;
   }
 
   &__item {
-    display: inline-flex;
-    align-items: center;
-    gap: clamp(1.5rem, 3vw, 3rem);
-    padding-right: clamp(1.5rem, 3vw, 3rem);
-    font-size: clamp(2.6rem, 8vw, 8rem);
-    font-weight: 600;
-    letter-spacing: -0.05em;
-    line-height: 1.05;
-    white-space: nowrap;
+	 display: inline-flex;
+	 align-items: center;
+	 gap: clamp(1.5rem, 3vw, 3rem);
+	 padding-right: clamp(1.5rem, 3vw, 3rem);
+	 font-size: clamp(2.6rem, 8vw, 8rem);
+	 font-weight: 600;
+	 letter-spacing: -0.05em;
+	 line-height: 1.05;
+	 white-space: nowrap;
 
-    &:nth-child(even) {
-      font-family: var(--font-serif);
-      font-style: italic;
-      font-weight: 400;
-      letter-spacing: -0.02em;
-      color: var(--fg-dim);
-    }
+	 &:nth-child(even) {
+		font-family: var(--font-serif);
+		font-style: italic;
+		font-weight: 400;
+		letter-spacing: -0.02em;
+		color: var(--fg-dim);
+	 }
   }
 
   &__sep {
-    font-size: 0.5em;
-    color: var(--accent);
+	 font-size: 0.5em;
+	 color: var(--accent);
   }
 }

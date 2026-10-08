@@ -11,28 +11,28 @@
   color: var(--fg);
 
   &__index {
-    color: var(--accent);
+	 color: var(--accent);
   }
 
   .theme-light &__index {
-    color: var(--fg);
+	 color: var(--fg);
   }
 
   &__label {
-    font-size: 0.72rem;
+	 font-size: 0.72rem;
   }
 
   &__aside {
-    color: var(--fg-dim);
-    text-align: right;
+	 color: var(--fg-dim);
+	 text-align: right;
   }
 
   &__rule {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 1px;
-    background: var(--line);
+	 position: absolute;
+	 left: 0;
+	 right: 0;
+	 bottom: 0;
+	 height: 1px;
+	 background: var(--line);
   }
 }

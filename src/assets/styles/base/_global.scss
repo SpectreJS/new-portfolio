@@ -7,7 +7,7 @@ html {
   scrollbar-color: var(--accent) var(--ink);
 
   &.is-locked {
-    overflow: hidden;
+	 overflow: hidden;
   }
 }
 
@@ -57,7 +57,7 @@ main:focus {
   transition: transform 0.4s $ease-expo;
 
   &:focus-visible {
-    transform: none;
+	 transform: none;
   }
 }
 
@@ -76,7 +76,7 @@ html.has-cursor {
   a,
   button,
   [data-cursor] {
-    cursor: none;
+	 cursor: none;
   }
 }
 
@@ -89,34 +89,34 @@ html.has-cursor {
   padding-bottom: 0.2em;
 
   &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 1px;
-    background: currentColor;
-    transform-origin: right;
-    transition: transform 0.7s $ease-curtain;
+	 content: '';
+	 position: absolute;
+	 left: 0;
+	 right: 0;
+	 bottom: 0;
+	 height: 1px;
+	 background: currentColor;
+	 transform-origin: right;
+	 transition: transform 0.7s $ease-curtain;
   }
 
   @include hover {
-    &::after {
-      transform: scaleX(0);
-      transform-origin: right;
-      animation: underline-in 0.7s 0.35s $ease-curtain forwards;
-    }
+	 &::after {
+		transform: scaleX(0);
+		transform-origin: right;
+		animation: underline-in 0.7s 0.35s $ease-curtain forwards;
+	 }
   }
 }
 
 @keyframes underline-in {
   from {
-    transform: scaleX(0);
-    transform-origin: left;
+	 transform: scaleX(0);
+	 transform-origin: left;
   }
   to {
-    transform: scaleX(1);
-    transform-origin: left;
+	 transform: scaleX(1);
+	 transform-origin: left;
   }
 }
 
@@ -124,8 +124,8 @@ html.has-cursor {
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+	 animation-duration: 0.01ms !important;
+	 animation-iteration-count: 1 !important;
+	 transition-duration: 0.01ms !important;
   }
 }

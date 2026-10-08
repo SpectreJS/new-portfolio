@@ -14,58 +14,58 @@
   clip-path: inset(0% 0% 100% 0%);
 
   @include up($bp-lg) {
-    display: none;
+	 display: none;
   }
 
   &__nav li + li {
-    margin-top: 0.4rem;
+	 margin-top: 0.4rem;
   }
 
   &__link {
-    display: block;
+	 display: block;
   }
 
   &__link-mask {
-    display: block;
-    overflow: hidden;
-    padding-bottom: 0.05em;
+	 display: block;
+	 overflow: hidden;
+	 padding-bottom: 0.05em;
   }
 
   &__link-text {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 0.8rem;
-    font-size: clamp(3.2rem, 15vw, 7rem);
-    font-weight: 600;
-    letter-spacing: -0.05em;
-    line-height: 1;
+	 display: inline-flex;
+	 align-items: flex-start;
+	 gap: 0.8rem;
+	 font-size: clamp(3.2rem, 15vw, 7rem);
+	 font-weight: 600;
+	 letter-spacing: -0.05em;
+	 line-height: 1;
   }
 
   &__index {
-    margin-top: 0.8em;
-    color: var(--accent);
+	 margin-top: 0.8em;
+	 color: var(--accent);
   }
 
   &__foot {
-    display: grid;
-    gap: 1.2rem;
+	 display: grid;
+	 gap: 1.2rem;
   }
 
   &__mail {
-    font-size: 1.25rem;
-    font-weight: 500;
+	 font-size: 1.25rem;
+	 font-weight: 500;
   }
 
   &__socials {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.2rem;
+	 display: flex;
+	 flex-wrap: wrap;
+	 gap: 1.2rem;
 
-    a {
-      @include mono-label;
-      display: inline-block;
-      padding: 0.6rem 0;
-      color: var(--fg-dim);
-    }
+	 a {
+		@include mono-label;
+		display: inline-block;
+		padding: 0.6rem 0;
+		color: var(--fg-dim);
+	 }
   }
 }

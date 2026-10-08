@@ -3,27 +3,27 @@
 /* Mobile-first breakpoint: styles apply from $bp upward. */
 @mixin up($bp) {
   @media (min-width: $bp) {
-    @content;
+	 @content;
   }
 }
 
 @mixin down($bp) {
   @media (max-width: ($bp - 1px)) {
-    @content;
+	 @content;
   }
 }
 
 @mixin hover {
   @media (hover: hover) and (pointer: fine) {
-    &:hover {
-      @content;
-    }
+	 &:hover {
+		@content;
+	 }
   }
 }
 
 @mixin motion {
   @media (prefers-reduced-motion: no-preference) {
-    @content;
+	 @content;
   }
 }
 

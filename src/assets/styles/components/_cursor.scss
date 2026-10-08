@@ -12,74 +12,74 @@
   --press: 1;
 
   &.is-visible {
-    opacity: 1;
+	 opacity: 1;
   }
 
   &.is-pressed {
-    --press: 0.82;
+	 --press: 0.82;
   }
 
   &__circle {
-    position: absolute;
-    left: -50px;
-    top: -50px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: var(--bone);
-    mix-blend-mode: difference;
-    transform: scale(calc(var(--scale) * var(--press)));
-    transition: transform 0.55s $ease-expo, background-color 0.4s;
+	 position: absolute;
+	 left: -50px;
+	 top: -50px;
+	 width: 100px;
+	 height: 100px;
+	 border-radius: 50%;
+	 background: var(--bone);
+	 mix-blend-mode: difference;
+	 transform: scale(calc(var(--scale) * var(--press)));
+	 transition: transform 0.55s $ease-expo, background-color 0.4s;
   }
 
   &__label {
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translate(-50%, -50%) scale(0.6);
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--ink);
-    opacity: 0;
-    transition: opacity 0.3s, transform 0.5s $ease-expo;
-    white-space: nowrap;
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+	 transform: translate(-50%, -50%) scale(0.6);
+	 font-family: var(--font-mono);
+	 font-size: 0.75rem;
+	 letter-spacing: 0.06em;
+	 text-transform: uppercase;
+	 color: var(--ink);
+	 opacity: 0;
+	 transition: opacity 0.3s, transform 0.5s $ease-expo;
+	 white-space: nowrap;
   }
 
   &[data-state='link'] {
-    --scale: 0.5;
+	 --scale: 0.5;
   }
 
   &[data-state='hide'] {
-    --scale: 0;
+	 --scale: 0;
   }
 
   &[data-state='view'],
   &[data-state='drag'],
   &[data-state='open'] {
-    --scale: 1;
+	 --scale: 1;
 
-    .cursor__circle {
-      background: var(--accent);
-      mix-blend-mode: normal;
-    }
+	 .cursor__circle {
+		background: var(--accent);
+		mix-blend-mode: normal;
+	 }
 
-    .cursor__label {
-      opacity: 1;
-      transform: translate(-50%, -50%) scale(1);
-    }
+	 .cursor__label {
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(1);
+	 }
   }
 
   &[data-state='drag'] {
-    --scale: 0.86;
+	 --scale: 0.86;
 
-    .cursor__label::before {
-      content: '← ';
-    }
+	 .cursor__label::before {
+		content: '← ';
+	 }
 
-    .cursor__label::after {
-      content: ' →';
-    }
+	 .cursor__label::after {
+		content: ' →';
+	 }
   }
 }

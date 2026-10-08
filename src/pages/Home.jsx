@@ -15,15 +15,15 @@ export default function Home() {
   useDocumentTitle(`${identity.firstName} ${identity.lastName} — Front-End & Creative Developer`)
 
   return (
-    <main className="page page--home" data-page id="main">
-      <Hero />
-      <About />
-      <Works />
-      <Marquee items={BAND} />
-      <Skills />
-      <Lab />
-      <Experience />
-      <Contact />
-    </main>
+	 <main className="page page--home" data-page id="main">
+		<Hero />
+		<About />
+		<Works />
+		<Marquee items={BAND} />
+		<Skills />
+		<Lab />
+		<Experience />
+		<Contact />
+	 </main>
   )
 }

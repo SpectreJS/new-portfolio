@@ -4,102 +4,102 @@
   position: relative;
 
   &__pin {
-    position: relative;
+	 position: relative;
 
-    @include up($bp-lg) {
-      height: 100vh;
-      overflow: hidden;
-    }
+	 @include up($bp-lg) {
+		height: 100vh;
+		overflow: hidden;
+	 }
   }
 
   &__track {
-    display: flex;
-    flex-direction: column;
-    gap: clamp(5rem, 14vw, 8rem);
-    padding: var(--section-y) var(--pad);
+	 display: flex;
+	 flex-direction: column;
+	 gap: clamp(5rem, 14vw, 8rem);
+	 padding: var(--section-y) var(--pad);
 
-    @include up($bp-lg) {
-      flex-direction: row;
-      align-items: center;
-      gap: 7vw;
-      width: max-content;
-      height: 100%;
-      padding: var(--header-h) var(--pad) 3rem;
-      will-change: transform;
-    }
+	 @include up($bp-lg) {
+		flex-direction: row;
+		align-items: center;
+		gap: 7vw;
+		width: max-content;
+		height: 100%;
+		padding: var(--header-h) var(--pad) 3rem;
+		will-change: transform;
+	 }
   }
 
   &__intro {
-    display: grid;
-    gap: 2rem;
+	 display: grid;
+	 gap: 2rem;
 
-    @include up($bp-lg) {
-      flex-shrink: 0;
-      width: 44vw;
-      align-content: center;
-    }
+	 @include up($bp-lg) {
+		flex-shrink: 0;
+		width: 44vw;
+		align-content: center;
+	 }
   }
 
   &__eyebrow {
-    color: var(--fg-dim);
+	 color: var(--fg-dim);
   }
 
   &__heading {
-    font-size: clamp(4rem, 15vw, 12rem);
+	 font-size: clamp(4rem, 15vw, 12rem);
   }
 
   &__lede {
-    max-width: 34ch;
-    color: var(--fg-dim);
-    font-size: 1.05rem;
+	 max-width: 34ch;
+	 color: var(--fg-dim);
+	 font-size: 1.05rem;
   }
 
   &__hint {
-    display: none;
-    margin-left: 0.6rem;
-    color: var(--accent);
+	 display: none;
+	 margin-left: 0.6rem;
+	 color: var(--accent);
 
-    @include up($bp-lg) {
-      display: inline;
-    }
+	 @include up($bp-lg) {
+		display: inline;
+	 }
   }
 
   &__outro {
-    display: grid;
-    gap: 2.4rem;
-    justify-items: start;
+	 display: grid;
+	 gap: 2.4rem;
+	 justify-items: start;
 
-    @include up($bp-lg) {
-      flex-shrink: 0;
-      width: 36vw;
-      padding-right: 6vw;
-    }
+	 @include up($bp-lg) {
+		flex-shrink: 0;
+		width: 36vw;
+		padding-right: 6vw;
+	 }
   }
 
   &__outro-text {
-    max-width: 14ch;
+	 max-width: 14ch;
   }
 
   &__progress {
-    display: none;
+	 display: none;
 
-    @include up($bp-lg) {
-      display: block;
-      position: absolute;
-      left: var(--pad);
-      right: var(--pad);
-      bottom: 2rem;
-      height: 1px;
-      background: var(--line);
-    }
+	 @include up($bp-lg) {
+		display: block;
+		position: absolute;
+		left: var(--pad);
+		right: var(--pad);
+		bottom: 2rem;
+		height: 1px;
+		background: var(--line);
+	 }
   }
 
   &__progress-bar {
-    display: block;
-    height: 100%;
-    background: var(--accent);
-    transform: scaleX(0);
-    transform-origin: left;
+	 display: block;
+	 height: 100%;
+	 background: var(--accent);
+	 transform: scaleX(0);
+	 transform-origin: left;
   }
 }
 
@@ -108,141 +108,141 @@
   gap: 1.6rem;
 
   @include up($bp-lg) {
-    flex-shrink: 0;
-    width: 56vw;
+	 flex-shrink: 0;
+	 width: 56vw;
 
-    &--high {
-      margin-bottom: 12vh;
-    }
+	 &--high {
+		margin-bottom: 12vh;
+	 }
 
-    &--low {
-      margin-top: 12vh;
-    }
+	 &--low {
+		margin-top: 12vh;
+	 }
   }
 
   &__media {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    aspect-ratio: 4 / 3;
-    background: var(--ink-2);
-    will-change: transform, clip-path;
+	 position: relative;
+	 display: block;
+	 overflow: hidden;
+	 aspect-ratio: 4 / 3;
+	 background: var(--ink-2);
+	 will-change: transform, clip-path;
 
-    @include up($bp-md) {
-      aspect-ratio: 16 / 10;
-    }
+	 @include up($bp-md) {
+		aspect-ratio: 16 / 10;
+	 }
 
-    @include up($bp-lg) {
-      aspect-ratio: auto;
-      height: 56vh;
-    }
+	 @include up($bp-lg) {
+		aspect-ratio: auto;
+		height: 56vh;
+	 }
   }
 
   &__img {
-    position: absolute;
-    top: -6%;
-    left: 0;
-    width: 100%;
-    height: 112%;
-    object-fit: cover;
-    will-change: transform;
+	 position: absolute;
+	 top: -6%;
+	 left: 0;
+	 width: 100%;
+	 height: 112%;
+	 object-fit: cover;
+	 will-change: transform;
 
-    @include up($bp-lg) {
-      top: 0;
-      left: -8%;
-      width: 116%;
-      height: 100%;
-    }
+	 @include up($bp-lg) {
+		top: 0;
+		left: -8%;
+		width: 116%;
+		height: 100%;
+	 }
   }
 
   &__index-big {
-    position: absolute;
-    left: 1.2rem;
-    bottom: 0.4rem;
-    font-size: clamp(4rem, 9vw, 9rem);
-    font-weight: 700;
-    letter-spacing: -0.06em;
-    line-height: 0.85;
-    color: var(--bone);
-    mix-blend-mode: difference;
-    pointer-events: none;
+	 position: absolute;
+	 left: 1.2rem;
+	 bottom: 0.4rem;
+	 font-size: clamp(4rem, 9vw, 9rem);
+	 font-weight: 700;
+	 letter-spacing: -0.06em;
+	 line-height: 0.85;
+	 color: var(--bone);
+	 mix-blend-mode: difference;
+	 pointer-events: none;
   }
 
   &__info {
-    display: grid;
-    gap: 0.8rem 3rem;
-    grid-template-areas:
-      'index'
-      'title'
-      'category'
-      'desc'
-      'tech'
-      'link';
+	 display: grid;
+	 gap: 0.8rem 3rem;
+	 grid-template-areas:
+		'index'
+		'title'
+		'category'
+		'desc'
+		'tech'
+		'link';
 
-    @include up($bp-md) {
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas:
-        'index desc'
-        'title desc'
-        'category tech'
-        '. link';
-    }
+	 @include up($bp-md) {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+		  'index desc'
+		  'title desc'
+		  'category tech'
+		  '. link';
+	 }
   }
 
   &__index {
-    grid-area: index;
-    color: var(--fg-dim);
+	 grid-area: index;
+	 color: var(--fg-dim);
   }
 
   &__title {
-    grid-area: title;
-    font-size: clamp(2.4rem, 4.6vw, 5rem);
-    font-weight: 600;
-    letter-spacing: -0.05em;
-    line-height: 0.95;
+	 grid-area: title;
+	 font-size: clamp(2.4rem, 4.6vw, 5rem);
+	 font-weight: 600;
+	 letter-spacing: -0.05em;
+	 line-height: 0.95;
 
-    a {
-      display: inline-block;
-      transition: transform 0.8s $ease-expo;
-    }
+	 a {
+		display: inline-block;
+		transition: transform 0.8s $ease-expo;
+	 }
   }
 
   &__category {
-    grid-area: category;
-    font-size: 1.4rem;
-    color: var(--accent);
+	 grid-area: category;
+	 font-size: 1.4rem;
+	 color: var(--accent);
   }
 
   &__desc {
-    grid-area: desc;
-    max-width: 40ch;
-    color: var(--fg-dim);
-    align-self: end;
+	 grid-area: desc;
+	 max-width: 40ch;
+	 color: var(--fg-dim);
+	 align-self: end;
   }
 
   &__tech {
-    grid-area: tech;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem 1rem;
-    color: var(--fg);
+	 grid-area: tech;
+	 display: flex;
+	 flex-wrap: wrap;
+	 gap: 0.4rem 1rem;
+	 color: var(--fg);
 
-    li + li::before {
-      content: '/';
-      margin-right: 1rem;
-      color: var(--fg-dim);
-    }
+	 li + li::before {
+		content: '/';
+		margin-right: 1rem;
+		color: var(--fg-dim);
+	 }
   }
 
   &__link {
-    grid-area: link;
-    justify-self: start;
-    font-weight: 500;
+	 grid-area: link;
+	 justify-self: start;
+	 font-weight: 500;
   }
 
   @include hover {
-    .work__title a {
-      transform: translateX(0.6rem);
-    }
+	 .work__title a {
+		transform: translateX(0.6rem);
+	 }
   }
 }
